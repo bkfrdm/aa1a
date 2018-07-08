@@ -1,0 +1,5 @@
+geckodriver.log
+db.sqlite3
+__pycache__
+private_settings
+client_secret.json

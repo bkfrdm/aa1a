@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Storage aa1a</title>
+  </head>
+
+  <body>
+    <h1>Wake up AA1a</h1>
+
+    <form method="POST">
+      <input id="id_storage_search" name="name_storage_search" placeholder="Enter supplier's name">
+      {% csrf_token %}
+    </form>
+
+    <table id="id_table_storage_search">
+      {% for s in suppliers %}
+        <tr><td>{{ forloop.counter }}: {{ s.di }}</td></tr>
+      {% endfor %}
+    </table>
+
+    <table id="id_headers">
+       {% for k, v in headers%}
+         <tr><td>{{k}}:{{v}}</td></tr>
+       {% endfor %}
+    </div>
+
+  </body>
+</html>
